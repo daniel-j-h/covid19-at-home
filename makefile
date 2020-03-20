@@ -28,7 +28,7 @@ pretty: ##correct formatting errors
 buildx: ## build locally
 	make pretty
 	make lint
-	docker buildx build --load --platform linux/amd64 --build-arg=VERSION=7.5.1 --build-arg=VERSION_MAJOR=7.5 --build-arg=VCS_REF=1 --build-arg=BUILD_DATE=1 --tag "stefancrain/folding-at-home:local" -f ./build/Dockerfile ./build/
+	docker buildx build --load --platform linux/amd64 --build-arg=VERSION=7.5.1 --build-arg=VERSION_MAJOR=7.5 --build-arg=VCS_REF=1 --build-arg=BUILD_DATE=1 --tag "danieljh/covid19-at-home:local" -f ./build/Dockerfile ./build/
 
 run-local: ## test locally
-	docker run "stefancrain/folding-at-home:local"
+	docker run "danieljh/folding-at-home:local"
