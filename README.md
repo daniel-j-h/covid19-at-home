@@ -1,8 +1,11 @@
 # Covid19@Home
 
-What's this all about? See [Folding@Home AMA](https://www.reddit.com/r/pcmasterrace/comments/flgm7q/ama_with_the_team_behind_foldinghome_coronavirus/.compact)
+What's this all about?
+- https://foldingathome.org/2020/03/15/coronavirus-what-were-doing-and-how-you-can-help-in-simple-terms/
+- https://foldingathome.org/2020/03/10/covid19-update/
+- https://www.reddit.com/r/pcmasterrace/comments/flgm7q/ama_with_the_team_behind_foldinghome_coronavirus/.compact
 
-Adapted from https://github.com/stefancrain/folding-at-home for my 6x GTX 1080 TI GPU rig
+Project adapted from https://github.com/stefancrain/folding-at-home for my 6x GTX 1080 TI GPU rig
 
 ![](./danipod.jpg)
 
