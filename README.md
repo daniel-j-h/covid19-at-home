@@ -15,7 +15,7 @@ docker run --runtime=nvidia --ipc=host -it --rm --entrypoint bash danieljh/covid
 And away we go!
 
 ```
-docker run --runtime=nvidia --ipc=host --network=host -it --rm danieljh/covid19-at-home --team=245416 --power=full --gpu-usage=100
+docker run --runtime=nvidia --ipc=host --network=host -it --rm danieljh/covid19-at-home --team=245416 --power=full --gpu-usage=100 --cpu-usage=100
 ```
 
 
