@@ -1,27 +1,27 @@
 # Covid19@Home
 
+What's this all about? See [Folding@Home AMA](https://www.reddit.com/r/pcmasterrace/comments/flgm7q/ama_with_the_team_behind_foldinghome_coronavirus/.compact)
+
 Adapted from https://github.com/stefancrain/folding-at-home for my 6x GTX 1080 TI GPU rig
 
 ![](./danipod.jpg)
 
+Inside the container first check `nvidia-smi` to make sure GPUs are visible.
 
 ```
-docker run --rm --entrypoint="/usr/bin/FAHClient" danieljh/covid19-at-home --help
-
-docker run 
-  -p 7396:7396 \
-  danieljh/covid19-at-home:latest \
-  --user=YOUR_NAME_HERE \
-  --team=245416 \
-  --power=full \
-  --gpu-usage=100
+docker run --runtime=nvidia --ipc=host -it --rm --entrypoint bash danieljh/covid19-at-home
 ```
 
-I manually built and pushed the image once
+And away we go!
+
+```
+docker run --runtime=nvidia --ipc=host --network=host -it --rm danieljh/covid19-at-home --team=245416 --power=full --gpu-usage=100
+```
+
+
+I manually built and pushed the image once (see [tags on docker hub](https://hub.docker.com/r/danieljh/covid19-at-home/tags))
 
 ```
 docker build -t danieljh/covid19-at-home -f ./build/Dockerfile ./build
 docker push danieljh/covid19-at-home
 ```
-
-https://hub.docker.com/r/danieljh/covid19-at-home/tags
