@@ -10,7 +10,7 @@ services:
     command:
       [
         "--user=YOUR_NAME_HERE",
-        "--team=229500",
+        "--team=245416",
         "--power=full",
         "--gpu-usage=100",
       ]
