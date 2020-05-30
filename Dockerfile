@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget ca-certificates ocl-icd-opencl-dev && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget -q https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb && \
+RUN wget -q https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.13_amd64.deb && \
     dpkg -i --force-depends fahclient*.deb ; \
     touch /usr/share/doc/fahclient/sample-config.xml && \
     rm fahclient*.deb
